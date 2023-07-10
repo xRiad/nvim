@@ -22,6 +22,13 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+  use('preservim/nerdtree')
+  use {
+    'neoclide/coc.nvim',
+    branch = 'release',
+  }
+  use('preservim/tagbar')
+  use('tpope/vim-commentary')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',

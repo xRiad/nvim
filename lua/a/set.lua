@@ -28,5 +28,5 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
-
+-- Automatically save changes when leaving insert mode
+vim.cmd([[autocmd InsertLeave * :w]])
