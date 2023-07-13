@@ -16,12 +16,9 @@ return require('packer').startup(function(use)
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
   vim.cmd('colorscheme rose-pine')
-
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use('nvim-treesitter/playground')
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
-  use('tpope/vim-fugitive')
   use('preservim/nerdtree')
   use {
     'neoclide/coc.nvim',
@@ -29,6 +26,19 @@ return require('packer').startup(function(use)
   }
   use('preservim/tagbar')
   use('tpope/vim-commentary')
+  use {
+     'nvim-lualine/lualine.nvim',
+     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+  
+  --lspsaga
+  use ({
+      'nvimdev/lspsaga.nvim',
+      after = 'nvim-lspconfig',
+      config = function()
+          require('lspsaga').setup({})
+      end,
+  })
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -49,5 +59,6 @@ return require('packer').startup(function(use)
 	  {'hrsh7th/cmp-nvim-lsp'}, -- Required
 	  {'L3MON4D3/LuaSnip'},     -- Required
   }
+
 }
 end)
