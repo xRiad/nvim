@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
     branch = 'release',
   }
   use('preservim/tagbar')
-  use('tpope/vim-commentary')
+  use('')
   use {
      'nvim-lualine/lualine.nvim',
      requires = { 'nvim-tree/nvim-web-devicons', opt = true }

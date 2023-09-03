@@ -122,6 +122,11 @@ _G.packer_plugins = {
     path = "/home/a/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  nerdcommenter = {
+    loaded = true,
+    path = "/home/a/.local/share/nvim/site/pack/packer/start/nerdcommenter",
+    url = "https://github.com/scrooloose/nerdcommenter"
+  },
   nerdtree = {
     loaded = true,
     path = "/home/a/.local/share/nvim/site/pack/packer/start/nerdtree",
@@ -177,11 +182,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/a/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/home/a/.local/share/nvim/site/pack/packer/start/vim-commentary",
-    url = "https://github.com/tpope/vim-commentary"
   }
 }
 
